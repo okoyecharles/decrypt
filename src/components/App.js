@@ -1,24 +1,17 @@
-import { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import fetchMarkets from '../redux/actions';
+import React from 'react';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import Home from './Home';
 
 function App() {
-  const dispatch = useDispatch();
-  const markets = useSelector((state) => state.markets);
-  const [marketLoaded, setMarketLoaded] = useState(0);
-  console.log('Markets >>>', markets);
-
-  useEffect(() => {
-    if (!marketLoaded) {
-      dispatch(fetchMarkets());
-      setMarketLoaded(1);
-    }
-  }, []);
-
   return (
-    <div className="App">
-      This will Be The Decrypt App.
-    </div>
+    <Router>
+      <div className="app">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<h1>Sorry Page did not load</h1>} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

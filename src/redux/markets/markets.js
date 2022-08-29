@@ -4,8 +4,8 @@ const initialState = [];
 
 const markets = (state = initialState, action) => {
   switch (action.type) {
-    case `${actionType.LOAD_MARKETS}/fulfilled`:
-      return action.payload.markets;
+    case actionType.LOAD_MARKETS:
+      return action.payload;
     default:
       return state;
   }

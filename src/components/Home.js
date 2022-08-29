@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import fetchMarkets from '../redux/actions';
 import Coin from './Coin';
+import '../styles/Home.css';
 
 function Home() {
   const dispatch = useDispatch();
@@ -13,13 +14,12 @@ function Home() {
       dispatch(fetchMarkets());
       setMarketLoaded(true);
     }
-    console.log('Markets >>> ', markets);
   });
 
   return (
     <div className="home">
       <div className="home__container">
-        <div className="home__grid">
+        <ul className="home__grid">
           {markets?.map((coin) => (
             <Coin
               key={coin.rank}
@@ -29,7 +29,7 @@ function Home() {
               change={coin.percent_change_24h}
             />
           ))}
-        </div>
+        </ul>
       </div>
     </div>
   );

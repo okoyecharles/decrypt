@@ -20,6 +20,11 @@ const loadMarketInfo = (data) => {
   };
 };
 
+const loadDetails = (details) => ({
+  type: actionType.LOAD_DETAILS,
+  payload: details,
+});
+
 export const fetchTickers = () => async (dispatch) => {
   const { data } = await axios.get('https://api.coinlore.net/api/tickers/');
   dispatch(loadTickers(data.data));
@@ -30,9 +35,25 @@ export const fetchMarketInfo = () => async (dispatch) => {
   dispatch(loadMarketInfo(data[0]));
 };
 
-export const fetchDetails = (id) => async () => {
+export const fetchDetails = (id) => async (dispatch) => {
   const { data: tickerInfo } = await axios.get(`https://api.coinlore.net/api/ticker/?id=${id}`);
-  const { data: markets } = await axios.get(`https://api.coinlore.net/api/markets/?id=${id}`);
-  const { data: socials } = await axios.get(`https://api.coinlore.net/api/social_stats/?id=${id}`);
-  console.log(tickerInfo, markets, socials);
+  const { data: markets } = await axios.get(`https://api.coinlore.net/api/coin/markets/?id=${id}`);
+  const { data: socials } = await axios.get(`https://api.coinlore.net/api/coin/social_stats/?id=${id}`);
+
+  const details = {
+    tickerInfo: tickerInfo[0],
+    socials,
+    markets,
+  };
+  console.log(details);
+  dispatch(loadDetails(details));
 };
+
+export const setDetails = (id) => ({
+  type: actionType.SET_DETAILS,
+  payload: id,
+});
+
+export const removeNavBack = () => ({
+  type: actionType.REMOVE_NAV_BACK,
+});

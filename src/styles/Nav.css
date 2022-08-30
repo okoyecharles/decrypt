@@ -21,3 +21,16 @@
   font-size: 1.25em;
   margin-inline: auto;
 }
+
+.nav__back {
+  box-shadow: 0 0 0 .05em #efb90a;
+  font-size: 1.75em;
+  padding: .25em;
+  border-radius: 25%;
+  margin-right: -1em;
+}
+
+.nav__back:active {
+  color: white;
+  background: #efb90a;
+}

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchTickers } from '../redux/actions';
 import Ticker from './Ticker';
+import Loading from './Loading';
 import '../styles/Tickers.css';
 
 function Tickers() {
@@ -17,6 +18,7 @@ function Tickers() {
 
   return (
     <div className="tickers">
+      {!tickers.length && (<Loading className="tickers__loading" />)}
       <div className="tickers__container">
         <ul className="tickers__grid">
           {tickers?.map((ticker) => (
@@ -30,6 +32,7 @@ function Tickers() {
           ))}
         </ul>
       </div>
+
     </div>
   );
 }

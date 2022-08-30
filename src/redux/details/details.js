@@ -1,12 +1,14 @@
-const initialState = {}
+import * as actionType from '../actionTypes';
+
+const initialState = {};
 
 const details = (state = initialState, action) => {
   switch (action.type) {
-    case value:
-      
-      break;
-  
+    case actionType.LOAD_DETAILS:
+      return { ...state, ...action.payload };
     default:
-      break;
+      return state;
   }
-}
+};
+
+export default details;

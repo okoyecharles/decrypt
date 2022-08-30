@@ -29,3 +29,10 @@ export const fetchMarketInfo = () => async (dispatch) => {
   const { data } = await axios.get('https://api.coinlore.net/api/global/');
   dispatch(loadMarketInfo(data[0]));
 };
+
+export const fetchDetails = (id) => async () => {
+  const { data: tickerInfo } = await axios.get(`https://api.coinlore.net/api/ticker/?id=${id}`);
+  const { data: markets } = await axios.get(`https://api.coinlore.net/api/markets/?id=${id}`);
+  const { data: socials } = await axios.get(`https://api.coinlore.net/api/social_stats/?id=${id}`);
+  console.log(tickerInfo, markets, socials);
+};

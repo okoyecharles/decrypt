@@ -1,0 +1,5 @@
+.tickers__grid {
+  display: grid;
+  list-style: none;
+  padding: 0;
+}

@@ -1,11 +1,13 @@
 import React from 'react';
+import logo from '../images/logo.png';
 import '../styles/Nav.css';
 
 function Nav() {
   return (
     <div className="nav">
       <div className="nav__container">
-        Hey I&apos;m the nav.
+        <img src={logo} alt="" className="nav__logo" />
+        <div className="nav__description">Decrypt Stats</div>
       </div>
     </div>
   );

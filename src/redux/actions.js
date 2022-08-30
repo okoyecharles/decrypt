@@ -1,14 +1,31 @@
 import axios from 'axios';
 import * as actionType from './actionTypes';
 
-export const loadMarkets = (markets) => ({
-  type: actionType.LOAD_MARKETS,
-  payload: markets,
+const loadTickers = (tickers) => ({
+  type: actionType.LOAD_TICKERS,
+  payload: tickers,
 });
 
-const fetchMarkets = () => async (dispatch) => {
-  const { data } = await axios.get('https://api.coinlore.net/api/tickers/');
-  dispatch(loadMarkets(data.data));
+const loadMarketInfo = (data) => {
+  const marketInfo = {
+    coinsCount: data.coins_count,
+    marketCount: data.active_markets,
+    marketCap: data.total_mcap,
+    marketVol: data.total_volume,
+    marketPerChange: data.avg_change_percent,
+  };
+  return {
+    type: actionType.LOAD_MARKET_INFO,
+    payload: marketInfo,
+  };
 };
 
-export default fetchMarkets;
+export const fetchTickers = () => async (dispatch) => {
+  const { data } = await axios.get('https://api.coinlore.net/api/tickers/');
+  dispatch(loadTickers(data.data));
+};
+
+export const fetchMarketInfo = () => async (dispatch) => {
+  const { data } = await axios.get('https://api.coinlore.net/api/global/');
+  dispatch(loadMarketInfo(data[0]));
+};

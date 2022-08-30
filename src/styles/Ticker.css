@@ -15,6 +15,11 @@
   color: #b58b03;
 }
 
+.ticker__change {
+  padding: .25em .5em;
+  border-radius: .25em;
+}
+
 .ticker__details {
   background: #efb90a;
   font-size: 1.5em;

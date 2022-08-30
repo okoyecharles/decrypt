@@ -22,7 +22,12 @@ function Ticker({
     <li className="ticker">
       <h3 className="ticker__symbol">{symbol}</h3>
       <div className="ticker__price">{currencyFormatter.format(price)}</div>
-      <div className="ticker__change">{change || id}</div>
+      <div
+        className="ticker__change"
+        style={parseFloat(change) > 0 ? { background: 'lightgreen' } : { background: '#ef340a98' }}
+      >
+        {`${change}%`}
+      </div>
       <MdArrowForwardIos className="ticker__details" onClick={showDetails} />
     </li>
   );

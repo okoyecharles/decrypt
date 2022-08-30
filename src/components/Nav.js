@@ -15,7 +15,7 @@ function Nav() {
     <div className="nav">
       <div className="nav__container">
         <img src={logo} alt="" className="nav__logo" />
-        <div className="nav__description">Decrypt Stats</div>
+        <div className="nav__description">{!details.nav_active ? 'Decrypt Stats' : 'Decrypt Details'}</div>
         {details.nav_active && (
           <MdArrowBackIosNew
             className="nav__back"

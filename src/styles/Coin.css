@@ -1,9 +1,8 @@
 .coin {
-  background:#efb90a;
-  border-radius: .25em;
-  padding: .5em;
-
-  transition: transform .25s ease-in;
+  background: #efb90a;
+  border-radius: 0.25em;
+  padding: 0.5em;
+  transition: transform 0.25s ease-in;
 }
 
 .coin:hover {

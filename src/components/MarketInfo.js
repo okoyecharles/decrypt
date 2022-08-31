@@ -17,7 +17,7 @@ function MarketInfo() {
 
   return (
     <div className="marketInfo">
-      <h2 className="marketInfo__header">Decrypt Market Info</h2>
+      <h2 className="marketInfo__header">Decrypt Market Information</h2>
       <ul className="marketInfo__container">
         <li className="marketInfo__item">
           <h3>Coins</h3>

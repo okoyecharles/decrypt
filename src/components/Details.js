@@ -24,8 +24,8 @@ function Details() {
 
   return (
     <div className="details">
-      {!details.tickerInfo && <Loading />}
-      {details.tickerInfo && details.markets && details.socials && (
+      {!(details.tickerInfo && details.markets && (details.socials || details.socials === '')) && <Loading />}
+      {details.tickerInfo && details.markets && (details.socials || details.socials === '') && (
         <div className="details__container">
           <section className="details__namePrice">
             <h2 className="details__name">{`${details.tickerInfo.name} (${details.tickerInfo.symbol})`}</h2>
@@ -81,7 +81,7 @@ function Details() {
             <div className="details__infoItem">
               <span>Reddit Subscribers: </span>
               <span>
-                {details.socials.reddit.subscribers
+                {details.socials && details.socials.reddit.subscribers
                   ? numberFormat(details.socials.reddit.subscribers)
                   : 'none'}
               </span>
@@ -89,7 +89,7 @@ function Details() {
             <div className="details__infoItem">
               <span>Twitter Followers: </span>
               <span>
-                {details.socials.twitter.followers_count
+                {details.socials && details.socials.twitter.followers_count
                   ? numberFormat(details.socials.twitter.followers_count)
                   : 'none'}
               </span>

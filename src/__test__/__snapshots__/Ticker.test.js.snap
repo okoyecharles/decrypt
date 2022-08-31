@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Ticker /> renders correctly 1`] = `
+<li
+  className="ticker"
+>
+  <h3
+    className="ticker__symbol"
+  >
+    BTC
+  </h3>
+  <div
+    className="ticker__price"
+  >
+    $20,309.00
+  </div>
+  <div
+    className="ticker__change"
+    style={
+      Object {
+        "background": "lightgreen",
+      }
+    }
+  >
+    0.25%
+  </div>
+  <svg
+    className="ticker__details"
+    fill="currentColor"
+    height="1em"
+    onClick={[Function]}
+    stroke="currentColor"
+    strokeWidth="0"
+    style={
+      Object {
+        "color": undefined,
+      }
+    }
+    viewBox="0 0 24 24"
+    width="1em"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0 0h24v24H0V0z"
+      fill="none"
+    />
+    <path
+      d="M6.23 20.23L8 22l10-10L8 2 6.23 3.77 14.46 12z"
+    />
+  </svg>
+</li>
+`;

@@ -1,8 +1,10 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import thunk from 'redux-thunk';
-import markets from './markets/markets';
+import tickers from './tickers/tickers';
+import marketInfo from './marketInfo/marketInfo';
+import details from './details/details';
 
-const rootReducer = combineReducers({ markets });
+const rootReducer = combineReducers({ tickers, marketInfo, details });
 
 const store = configureStore({
   reducer: rootReducer,

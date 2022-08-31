@@ -1,2 +1,7 @@
-export const LOAD_MARKETS = 'decrypt/markets/LOAD_MARKETS';
-export const DEFAULT_MARKET_ACTION = 'decrypt/markets/DEFAULT_MARKET_ACTION';
+export const LOAD_TICKERS = 'decrypt/tickers/LOAD_TICKERS';
+
+export const LOAD_MARKET_INFO = 'decrypt/marketInfo/LOAD_MARKET_INFO';
+
+export const LOAD_DETAILS = 'decrypt/details/LOAD_DETAILS';
+export const SET_DETAILS = 'decrypt/details/SET_DETAILS';
+export const REMOVE_NAV_BACK = 'decrypt/details/REMOVE_NAV_BACK';

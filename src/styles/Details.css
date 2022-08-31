@@ -1,0 +1,33 @@
+.details__namePrice {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  background-color: #efb90a;
+  padding: 1em;
+}
+
+.details__price {
+  color: #6c5509;
+  font-weight: bold;
+}
+
+.details__info > h3 {
+  padding: 0.5em;
+  background-color: #dcd5c1;
+}
+
+.details__infoItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.details__infoItem > span {
+  padding: 0.25em 0.5em;
+  box-shadow: 0 0 0 0.05em #d3d3d3;
+}
+
+.details__infoItem > span:nth-child(1) {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #a6851a;
+}

@@ -2,13 +2,13 @@ import * as actionType from '../actionTypes';
 
 const initialState = [];
 
-const markets = (state = initialState, action) => {
+const tickers = (state = initialState, action) => {
   switch (action.type) {
-    case actionType.LOAD_MARKETS:
+    case actionType.LOAD_TICKERS:
       return action.payload;
     default:
       return state;
   }
 };
 
-export default markets;
+export default tickers;

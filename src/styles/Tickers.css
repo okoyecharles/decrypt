@@ -1,0 +1,14 @@
+.tickers__grid {
+  display: grid;
+  list-style: none;
+  padding: 0;
+}
+
+.tickers {
+  display: flex;
+  flex-direction: column;
+}
+
+.tickers__loading {
+  margin-inline: auto;
+}

@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MarketInfo /> renders correctly 1`] = `
+<div
+  className="marketInfo"
+>
+  <h2
+    className="marketInfo__header"
+  >
+    Decrypt Market Information
+  </h2>
+  <ul
+    className="marketInfo__container"
+  >
+    <li
+      className="marketInfo__item"
+    >
+      <h3>
+        Coins
+      </h3>
+      <span>
+        Loading...
+      </span>
+    </li>
+    <li
+      className="marketInfo__item"
+    >
+      <h3>
+        Active markets
+      </h3>
+      <span>
+        Loading...
+      </span>
+    </li>
+    <li
+      className="marketInfo__item"
+    >
+      <h3>
+        Market cap
+      </h3>
+      <span>
+        Loading...
+      </span>
+    </li>
+    <li
+      className="marketInfo__item"
+    >
+      <h3>
+        Market volume
+      </h3>
+      <span>
+        Loading...
+      </span>
+    </li>
+    <li
+      className="marketInfo__item"
+    >
+      <h3>
+        Market change (avg)
+      </h3>
+      <span>
+        Loading...
+      </span>
+    </li>
+  </ul>
+</div>
+`;

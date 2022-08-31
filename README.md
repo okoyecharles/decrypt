@@ -126,7 +126,6 @@ Distributed under the MIT License.
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* 
 * [Coinlore API](https://api.coinlore.net/)
 * [Img Shields](https://shields.io)
 * [GitHub Pages](https://pages.github.com)

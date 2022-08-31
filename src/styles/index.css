@@ -14,7 +14,7 @@
 }
 
 h2 {
-  font-family: "Gill Sans", "Gill Sans MT"; 
+  font-family: "Gill Sans", "Gill Sans MT", sans-serif;
 }
 
 *::selection {

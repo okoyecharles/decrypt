@@ -45,7 +45,6 @@ export const fetchDetails = (id) => async (dispatch) => {
     socials,
     markets,
   };
-  console.log(details);
   dispatch(loadDetails(details));
 };
 

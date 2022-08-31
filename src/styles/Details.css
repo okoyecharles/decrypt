@@ -12,7 +12,7 @@
 }
 
 .details__info > h3 {
-  padding: .5em;
+  padding: 0.5em;
   background-color: #dcd5c1;
 }
 
@@ -22,8 +22,8 @@
 }
 
 .details__infoItem > span {
-  padding: .25em .5em;
-  box-shadow: 0 0 0 .05em #d3d3d3;
+  padding: 0.25em 0.5em;
+  box-shadow: 0 0 0 0.05em #d3d3d3;
 }
 
 .details__infoItem > span:nth-child(1) {

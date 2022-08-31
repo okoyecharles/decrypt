@@ -1,4 +1,3 @@
-import '../styles/Home.css';
 import MarketInfo from './MarketInfo';
 import Tickers from './Tickers';
 

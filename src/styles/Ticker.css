@@ -1,7 +1,6 @@
 .ticker {
   background: #fff;
   padding: 1em 0;
-  
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 0.5fr;
   place-items: center;
@@ -16,13 +15,13 @@
 }
 
 .ticker__change {
-  padding: .25em .5em;
-  border-radius: .25em;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
 }
 
 .ticker__details {
   background: #efb90a;
   font-size: 1.5em;
-  padding: .25em;
+  padding: 0.25em;
   border-radius: 50%;
 }

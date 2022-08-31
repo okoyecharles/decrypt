@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Nav /> renders correctly 1`] = `
+<div
+  className="nav"
+>
+  <div
+    className="nav__container"
+  >
+    <img
+      alt=""
+      className="nav__logo"
+      src="logo.png"
+    />
+    <div
+      className="nav__description"
+    >
+      Decrypt Stats
+    </div>
+  </div>
+</div>
+`;

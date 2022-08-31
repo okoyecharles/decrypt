@@ -49,6 +49,8 @@
 
 A crypto-API based mobile application that renders real-time data on crypto-currencies and stocks. Click [here](https://charles-decrypt.netlify.app) to see the project live.
 
+[Here is the video link](https://www.loom.com/share/4c26b65b003547078f81b6cfa3fb85e7)
+
 <img width="612" alt="decrypt-preview" src="https://user-images.githubusercontent.com/102174805/187620128-5047a990-dd65-4017-9e41-8673be6daefc.png">
 
 **Core Functionalities:**
@@ -127,6 +129,7 @@ Distributed under the MIT License.
 ## Acknowledgments
 
 * [Coinlore API](https://api.coinlore.net/)
+* [Behance Ballhead Application](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
 * [Img Shields](https://shields.io)
 * [GitHub Pages](https://pages.github.com)
 * [React Icons](https://react-icons.github.io/react-icons/search)
